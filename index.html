@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Café</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <style>
+        .hero {
+            background-image: url('https://www.example.com/cafe-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero-body {
+            background: rgba(48, 32, 32, 0.866);
+            padding: 4rem 1.5rem;
+        }
+        .hero .title, .hero .subtitle {
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+        }
+        .card {
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(48, 32, 32, 0.866);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-image img {
+            border-bottom: 2px solid #b54785;
+        }
+        .card-content h3 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #b54785;
+        }
+        .card-content p {
+            color: #6a6868;
+        }
+        footer {
+            background-color: #b54785;
+            color: white;
+            padding: 2rem 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .columns.is-variable {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">Luna Café</h1>
+                <h2 class="subtitle is-3">Desde 1973 ofreciendo los mejores sabores de Tegucigalpa</h2>
+            </div>
+        </div>
+    </section>
+
+    <main class="section">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Nuestros Productos</h2>
+            <div class="columns is-multiline is-variable is-4">
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://previews.123rf.com/images/seregam/seregam1206/seregam120600303/14021637-taza-llena-de-caf%C3%A9-en-granos.jpg" alt="Café Tradicional">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Café Tradicional</h3>
+                            <p>Un clásico de la casa, hecho con los mejores granos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://img.freepik.com/fotos-premium/cafe-capuchino_494606-107.jpg?w=360" alt="Capuchino">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Capuchino</h3>
+                            <p>Espuma perfecta combinada con café aromático.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://img.freepik.com/premium-photo/tranquil-morning-coffee-moment-with-latte-art_694697-10464.jpg" alt="Latte">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Latte</h3>
+                            <p>Leche cremosa y café suave, ideal para relajarse.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://us.123rf.com/450wm/yalcinsonat/yalcinsonat2302/yalcinsonat230200081/198760088-caf%C3%A9-expreso-doble-fresco-y-granos-de-caf%C3%A9-sobre-una-mesa-de-madera.jpg" alt="Espresso Doble">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Espresso Doble</h3>
+                            <p>Intensidad pura en cada sorbo, para los amantes del café fuerte.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://midwestniceblog.com/wp-content/uploads/2023/06/homemade-mocha-recipe.jpg" alt="Mocha">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Mocha</h3>
+                            <p>Una mezcla deliciosa de café y chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://img.freepik.com/fotos-premium/taza-cafe-helado-leche_889227-477.jpg?w=360" alt="Café Helado">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Café Helado</h3>
+                            <p>Perfecto para refrescarte en un día caluroso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://copykat.com/wp-content/uploads/2021/08/Starbucks-Caramel-Macchiato-Pin-3.jpg" alt="Macchiato">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Macchiato</h3>
+                            <p>Un espresso marcado con un toque de leche espumosa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://img.freepik.com/foto-gratis/deliciosos-granos-cafe-taza_23-2150691429.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726963200&semt=ais_hybrid" alt="Café Americano">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Café Americano</h3>
+                            <p>Sabor suave, ideal para cualquier momento del día.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://previews.123rf.com/images/sapunovaphoto/sapunovaphoto1611/sapunovaphoto161100016/65391547-caf%C3%A9-con-leche-y-croissant-franc%C3%A9s-tiro-vertical.jpg" alt="Café con Leche">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Café con Leche</h3>
+                            <p>Una mezcla equilibrada de café y leche.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4WMcblZ-cm45y9ITkkT6uEtjo87kmhu1N1g&s" alt="Té Chai">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Té Chai</h3>
+                            <p>Aromático y especiado, para una experiencia diferente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://img.freepik.com/foto-gratis/frappuccino-aromatico-mesa_23-2148900674.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724976000&semt=ais_hybrid" alt="Frappuccino">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Frappuccino</h3>
+                            <p>Café batido con hielo y crema, un favorito helado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwUbuMGqGJRvHHaZdsEZM64A9hxORW6YNOSw&s" alt="Ice coffe Negro">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Ice coffe Negro</h3>
+                            <p>Recien hecho lleno de sabor con expreso frio y hielo.</p>
+                        </div>
+                    </div>
+                </div>
+    </main>
+</body>
+</html>
